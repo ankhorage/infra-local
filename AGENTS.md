@@ -4,7 +4,7 @@
 
 ## Repository
 
-Package: `@ankhorage/local`
+Package: `@ankhorage/infra-local`
 
 Local-host compute adapter for provider-neutral Ankhorage infrastructure.
 

@@ -1,5 +1,5 @@
 {
-  "name": "@ankhorage/local",
+  "name": "@ankhorage/infra-local",
   "version": "0.3.24",
   "description": "Local-host compute adapter for provider-neutral Ankhorage infrastructure.",
   "type": "module",
@@ -9,11 +9,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankhorage/local.git"
+    "url": "git+https://github.com/ankhorage/infra-local.git"
   },
-  "homepage": "https://github.com/ankhorage/local#readme",
+  "homepage": "https://github.com/ankhorage/infra-local#readme",
   "bugs": {
-    "url": "https://github.com/ankhorage/local/issues"
+    "url": "https://github.com/ankhorage/infra-local/issues"
   },
   "keywords": [
     "ankhorage",
