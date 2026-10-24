@@ -1,5 +1,11 @@
 # @ankhorage/local
 
+## 0.3.24
+
+### Patch Changes
+
+- 32af69c: Update dependencies: `@ankhorage/contracts`.
+
 ## 0.3.23
 
 ### Patch Changes
