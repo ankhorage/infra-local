@@ -1,6 +1,6 @@
 {
   "name": "@ankhorage/infra-local",
-  "version": "0.3.26",
+  "version": "0.3.27",
   "description": "Local-host compute adapter for provider-neutral Ankhorage infrastructure.",
   "type": "module",
   "main": "./dist/index.js",

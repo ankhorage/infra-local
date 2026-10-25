@@ -1,5 +1,11 @@
 # @ankhorage/local
 
+## 0.3.27
+
+### Patch Changes
+
+- 1844210: Fix native Node ESM resolution for the published adapter package.
+
 ## 0.3.26
 
 ### Patch Changes
