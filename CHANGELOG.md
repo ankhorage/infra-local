@@ -1,5 +1,11 @@
 # @ankhorage/local
 
+## 0.3.25
+
+### Patch Changes
+
+- 11f2df2: Rename the Local infrastructure adapter package.
+
 ## 0.3.24
 
 ### Patch Changes

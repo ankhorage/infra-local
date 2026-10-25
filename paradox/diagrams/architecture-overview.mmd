@@ -1,42 +1,42 @@
 graph TD
-  package__ankhorage_local["@ankhorage/local"]
+  package__ankhorage_infra_local["@ankhorage/infra-local"]
   entrypoint_src_index_ts["src/index.ts"]
-  package__ankhorage_local --> entrypoint_src_index_ts
+  package__ankhorage_infra_local --> entrypoint_src_index_ts
   module_examples_basic_usage_index_ts["examples/basic-usage/index.ts"]
-  package__ankhorage_local -.-> module_examples_basic_usage_index_ts
+  package__ankhorage_infra_local -.-> module_examples_basic_usage_index_ts
   module_examples_basic_usage_index_ts --> module_dist_index_d_ts
   module_src_constants_infra_ts["src/constants/infra.ts"]
-  package__ankhorage_local -.-> module_src_constants_infra_ts
+  package__ankhorage_infra_local -.-> module_src_constants_infra_ts
   module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts["src/features/local-compute/adapters/outbound/createNodeLocalHostProbe.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
   module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts --> module_src_types_localCompute_ts
   module_src_features_local_compute_application_destroyLocalComputeAsync_ts["src/features/local-compute/application/destroyLocalComputeAsync.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_application_destroyLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_application_destroyLocalComputeAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts["src/features/local-compute/application/ensureLocalComputeAsync.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_application_ensureLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_application_ensureLocalComputeAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts --> module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts --> module_src_types_localCompute_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts["src/features/local-compute/application/getLocalComputeStatusAsync.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_application_getLocalComputeStatusAsync_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_application_getLocalComputeStatusAsync_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts --> module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts --> module_src_types_localCompute_ts
   module_src_features_local_compute_application_inspectLocalComputeAsync_ts["src/features/local-compute/application/inspectLocalComputeAsync.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_application_inspectLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeAsync_ts --> module_src_types_localCompute_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts["src/features/local-compute/application/inspectLocalComputeSnapshotAsync.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts --> module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts --> module_src_types_localCompute_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts["src/features/local-compute/application/planLocalComputeAsync.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_application_planLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_application_planLocalComputeAsync_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts --> module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts --> module_src_types_localCompute_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts["src/features/local-compute/application/validateLocalComputeAsync.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_application_validateLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_application_validateLocalComputeAsync_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts --> module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts --> module_src_types_localCompute_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts["src/features/local-compute/composition/createInfraAdapter.ts"]
-  package__ankhorage_local -.-> module_src_features_local_compute_composition_createInfraAdapter_ts
+  package__ankhorage_infra_local -.-> module_src_features_local_compute_composition_createInfraAdapter_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --> module_src_constants_infra_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --> module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --> module_src_features_local_compute_application_destroyLocalComputeAsync_ts
@@ -48,8 +48,8 @@ graph TD
   module_src_features_local_compute_composition_createInfraAdapter_ts --> module_src_types_localCompute_ts
   module_src_index_ts["src/index.ts"]
   module_src_infraAdapter_test_ts["src/infraAdapter.test.ts"]
-  package__ankhorage_local -.-> module_src_infraAdapter_test_ts
+  package__ankhorage_infra_local -.-> module_src_infraAdapter_test_ts
   module_src_infraAdapter_test_ts --> module_src_index_ts
   module_src_infraAdapter_test_ts --> module_src_types_localCompute_ts
   module_src_types_localCompute_ts["src/types/localCompute.ts"]
-  package__ankhorage_local -.-> module_src_types_localCompute_ts
+  package__ankhorage_infra_local -.-> module_src_types_localCompute_ts

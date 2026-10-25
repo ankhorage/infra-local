@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@ankhorage/local • Paradox</title>
+    <title>@ankhorage/infra-local • Paradox</title>
     <style>
       :root {
         color-scheme: light;
@@ -115,7 +115,7 @@
     <div class="layout">
       <aside class="sidebar">
         <p class="muted">Generated with Paradox</p>
-        <h1>@ankhorage/local</h1>
+        <h1>@ankhorage/infra-local</h1>
         <p>Local-host compute adapter for provider-neutral Ankhorage infrastructure.</p>
         <input id="search" class="search" type="search" placeholder="Search current view" />
         <nav aria-label="Documentation sections">
@@ -448,44 +448,44 @@ user&#39;s machine. A probe can be injected for deterministic tests or another h
     <h3>Architecture overview</h3>
     <p class="muted"><code>diagrams/architecture-overview.mmd</code></p>
     <div class="mermaid">graph TD
-  package__ankhorage_local[&quot;@ankhorage/local&quot;]
+  package__ankhorage_infra_local[&quot;@ankhorage/infra-local&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
-  package__ankhorage_local --&gt; entrypoint_src_index_ts
+  package__ankhorage_infra_local --&gt; entrypoint_src_index_ts
   module_examples_basic_usage_index_ts[&quot;examples/basic-usage/index.ts&quot;]
-  package__ankhorage_local -.-&gt; module_examples_basic_usage_index_ts
+  package__ankhorage_infra_local -.-&gt; module_examples_basic_usage_index_ts
   module_examples_basic_usage_index_ts --&gt; module_dist_index_d_ts
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_constants_infra_ts
+  package__ankhorage_infra_local -.-&gt; module_src_constants_infra_ts
   module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts[&quot;src/features/local-compute/adapters/outbound/createNodeLocalHostProbe.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
   module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_destroyLocalComputeAsync_ts[&quot;src/features/local-compute/application/destroyLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_destroyLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_destroyLocalComputeAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts[&quot;src/features/local-compute/application/ensureLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_ensureLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_ensureLocalComputeAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts[&quot;src/features/local-compute/application/getLocalComputeStatusAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_getLocalComputeStatusAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_getLocalComputeStatusAsync_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_inspectLocalComputeAsync_ts[&quot;src/features/local-compute/application/inspectLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts[&quot;src/features/local-compute/application/inspectLocalComputeSnapshotAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts[&quot;src/features/local-compute/application/planLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_planLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_planLocalComputeAsync_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts[&quot;src/features/local-compute/application/validateLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_validateLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_validateLocalComputeAsync_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts[&quot;src/features/local-compute/composition/createInfraAdapter.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_composition_createInfraAdapter_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_composition_createInfraAdapter_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --&gt; module_src_constants_infra_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --&gt; module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --&gt; module_src_features_local_compute_application_destroyLocalComputeAsync_ts
@@ -497,53 +497,53 @@ user&#39;s machine. A probe can be injected for deterministic tests or another h
   module_src_features_local_compute_composition_createInfraAdapter_ts --&gt; module_src_types_localCompute_ts
   module_src_index_ts[&quot;src/index.ts&quot;]
   module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_infraAdapter_test_ts
+  package__ankhorage_infra_local -.-&gt; module_src_infraAdapter_test_ts
   module_src_infraAdapter_test_ts --&gt; module_src_index_ts
   module_src_infraAdapter_test_ts --&gt; module_src_types_localCompute_ts
   module_src_types_localCompute_ts[&quot;src/types/localCompute.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_types_localCompute_ts
+  package__ankhorage_infra_local -.-&gt; module_src_types_localCompute_ts
 </div>
     <details>
       <summary>View Mermaid source</summary>
       <pre>graph TD
-  package__ankhorage_local[&quot;@ankhorage/local&quot;]
+  package__ankhorage_infra_local[&quot;@ankhorage/infra-local&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
-  package__ankhorage_local --&gt; entrypoint_src_index_ts
+  package__ankhorage_infra_local --&gt; entrypoint_src_index_ts
   module_examples_basic_usage_index_ts[&quot;examples/basic-usage/index.ts&quot;]
-  package__ankhorage_local -.-&gt; module_examples_basic_usage_index_ts
+  package__ankhorage_infra_local -.-&gt; module_examples_basic_usage_index_ts
   module_examples_basic_usage_index_ts --&gt; module_dist_index_d_ts
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_constants_infra_ts
+  package__ankhorage_infra_local -.-&gt; module_src_constants_infra_ts
   module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts[&quot;src/features/local-compute/adapters/outbound/createNodeLocalHostProbe.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
   module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_destroyLocalComputeAsync_ts[&quot;src/features/local-compute/application/destroyLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_destroyLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_destroyLocalComputeAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts[&quot;src/features/local-compute/application/ensureLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_ensureLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_ensureLocalComputeAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
   module_src_features_local_compute_application_ensureLocalComputeAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts[&quot;src/features/local-compute/application/getLocalComputeStatusAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_getLocalComputeStatusAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_getLocalComputeStatusAsync_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_getLocalComputeStatusAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_inspectLocalComputeAsync_ts[&quot;src/features/local-compute/application/inspectLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts[&quot;src/features/local-compute/application/inspectLocalComputeSnapshotAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_inspectLocalComputeSnapshotAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts[&quot;src/features/local-compute/application/planLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_planLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_planLocalComputeAsync_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_planLocalComputeAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts[&quot;src/features/local-compute/application/validateLocalComputeAsync.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_application_validateLocalComputeAsync_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_application_validateLocalComputeAsync_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts --&gt; module_src_features_local_compute_application_inspectLocalComputeAsync_ts
   module_src_features_local_compute_application_validateLocalComputeAsync_ts --&gt; module_src_types_localCompute_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts[&quot;src/features/local-compute/composition/createInfraAdapter.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_features_local_compute_composition_createInfraAdapter_ts
+  package__ankhorage_infra_local -.-&gt; module_src_features_local_compute_composition_createInfraAdapter_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --&gt; module_src_constants_infra_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --&gt; module_src_features_local_compute_adapters_outbound_createNodeLocalHostProbe_ts
   module_src_features_local_compute_composition_createInfraAdapter_ts --&gt; module_src_features_local_compute_application_destroyLocalComputeAsync_ts
@@ -555,11 +555,11 @@ user&#39;s machine. A probe can be injected for deterministic tests or another h
   module_src_features_local_compute_composition_createInfraAdapter_ts --&gt; module_src_types_localCompute_ts
   module_src_index_ts[&quot;src/index.ts&quot;]
   module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_infraAdapter_test_ts
+  package__ankhorage_infra_local -.-&gt; module_src_infraAdapter_test_ts
   module_src_infraAdapter_test_ts --&gt; module_src_index_ts
   module_src_infraAdapter_test_ts --&gt; module_src_types_localCompute_ts
   module_src_types_localCompute_ts[&quot;src/types/localCompute.ts&quot;]
-  package__ankhorage_local -.-&gt; module_src_types_localCompute_ts
+  package__ankhorage_infra_local -.-&gt; module_src_types_localCompute_ts
 </pre>
     </details>
   </article><article class="item" data-search="Module relationships diagrams/module-relationships.mmd">
