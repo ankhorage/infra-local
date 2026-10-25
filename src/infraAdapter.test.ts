@@ -2,8 +2,8 @@ import type { InfraComputeTarget, InfraResult } from '@ankhorage/contracts/infra
 import { INFRA_ADAPTER_CATALOG, isInfraAdapterDescriptor } from '@ankhorage/contracts/infra';
 import { describe, expect, it } from 'bun:test';
 
-import { createInfraAdapter, infraAdapterDescriptor } from './index';
-import type { LocalHostObservation, LocalHostProbe } from './types/localCompute';
+import { createInfraAdapter, infraAdapterDescriptor } from './index.js';
+import type { LocalHostObservation, LocalHostProbe } from './types/localCompute.js';
 
 describe('local-host compute adapter', () => {
   it('exports the exact Contracts catalog descriptor', () => {

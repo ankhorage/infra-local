@@ -5,8 +5,8 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { LocalHostProbe } from '../../../types/localCompute';
-import { inspectLocalComputeSnapshotAsync } from './inspectLocalComputeSnapshotAsync';
+import type { LocalHostProbe } from '../../../types/localCompute.js';
+import { inspectLocalComputeSnapshotAsync } from './inspectLocalComputeSnapshotAsync.js';
 
 /*** Return the validated current host as a portable compute target without provisioning it. */
 export async function ensureLocalComputeAsync(
