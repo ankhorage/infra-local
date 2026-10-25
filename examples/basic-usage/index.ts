@@ -1,4 +1,4 @@
-import { createInfraAdapter, infraAdapterDescriptor } from '@ankhorage/local';
+import { createInfraAdapter, infraAdapterDescriptor } from '@ankhorage/infra-local';
 
 const adapter = createInfraAdapter();
 
