@@ -1,5 +1,11 @@
 # @ankhorage/local
 
+## 0.3.26
+
+### Patch Changes
+
+- 7bcff5e: Publish releases through npm Trusted Publishing instead of a bootstrap token.
+
 ## 0.3.25
 
 ### Patch Changes
