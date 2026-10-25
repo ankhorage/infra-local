@@ -4,7 +4,7 @@ import { arch, platform } from 'node:os';
 
 import type { InfraComputeTarget, InfraResult } from '@ankhorage/contracts/infra';
 
-import type { LocalHostObservation, LocalHostProbe } from '../../../../types/localCompute';
+import type { LocalHostObservation, LocalHostProbe } from '../../../../types/localCompute.js';
 
 /*** Create the concrete Node host probe used by the default local compute adapter. */
 export function createNodeLocalHostProbe(): LocalHostProbe {

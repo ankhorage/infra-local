@@ -1,14 +1,14 @@
 import type { InfraComputeAdapter } from '@ankhorage/contracts/infra';
 
-import { infraAdapterDescriptor } from '../../../constants/infra';
-import type { LocalComputeAdapterOptions } from '../../../types/localCompute';
-import { createNodeLocalHostProbe } from '../adapters/outbound/createNodeLocalHostProbe';
-import { destroyLocalComputeAsync } from '../application/destroyLocalComputeAsync';
-import { ensureLocalComputeAsync } from '../application/ensureLocalComputeAsync';
-import { getLocalComputeStatusAsync } from '../application/getLocalComputeStatusAsync';
-import { inspectLocalComputeSnapshotAsync } from '../application/inspectLocalComputeSnapshotAsync';
-import { planLocalComputeAsync } from '../application/planLocalComputeAsync';
-import { validateLocalComputeAsync } from '../application/validateLocalComputeAsync';
+import { infraAdapterDescriptor } from '../../../constants/infra.js';
+import type { LocalComputeAdapterOptions } from '../../../types/localCompute.js';
+import { createNodeLocalHostProbe } from '../adapters/outbound/createNodeLocalHostProbe.js';
+import { destroyLocalComputeAsync } from '../application/destroyLocalComputeAsync.js';
+import { ensureLocalComputeAsync } from '../application/ensureLocalComputeAsync.js';
+import { getLocalComputeStatusAsync } from '../application/getLocalComputeStatusAsync.js';
+import { inspectLocalComputeSnapshotAsync } from '../application/inspectLocalComputeSnapshotAsync.js';
+import { planLocalComputeAsync } from '../application/planLocalComputeAsync.js';
+import { validateLocalComputeAsync } from '../application/validateLocalComputeAsync.js';
 
 /***
  * Create the canonical local-host compute adapter entrypoint.

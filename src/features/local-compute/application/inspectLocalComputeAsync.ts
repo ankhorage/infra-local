@@ -5,7 +5,7 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { LocalHostObservation, LocalHostProbe } from '../../../types/localCompute';
+import type { LocalHostObservation, LocalHostProbe } from '../../../types/localCompute.js';
 
 export interface InspectedLocalCompute {
   readonly observation: LocalHostObservation;

@@ -4,8 +4,8 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { LocalHostProbe } from '../../../types/localCompute';
-import { inspectLocalComputeAsync } from './inspectLocalComputeAsync';
+import type { LocalHostProbe } from '../../../types/localCompute.js';
+import { inspectLocalComputeAsync } from './inspectLocalComputeAsync.js';
 
 /*** Validate the selected local host without mutation. */
 export async function validateLocalComputeAsync(

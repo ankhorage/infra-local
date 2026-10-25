@@ -4,8 +4,8 @@ import type {
   InfraResult,
 } from '@ankhorage/contracts/infra';
 
-import type { LocalHostProbe } from '../../../types/localCompute';
-import { inspectLocalComputeAsync } from './inspectLocalComputeAsync';
+import type { LocalHostProbe } from '../../../types/localCompute.js';
+import { inspectLocalComputeAsync } from './inspectLocalComputeAsync.js';
 
 /*** Return current local host availability through the canonical compute status contract. */
 export async function getLocalComputeStatusAsync(
