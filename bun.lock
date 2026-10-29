@@ -5,7 +5,7 @@
     "": {
       "name": "@ankhorage/infra-local",
       "dependencies": {
-        "@ankhorage/contracts": "^26.2.2",
+        "@ankhorage/contracts": "^26.3.0",
       },
       "devDependencies": {
         "@ankhorage/devtools": "^2.3.34",
