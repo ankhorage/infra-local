@@ -1,5 +1,11 @@
 # @ankhorage/local
 
+## 0.3.30
+
+### Patch Changes
+
+- c80edb5: Update dependencies: `@ankhorage/contracts`.
+
 ## 0.3.29
 
 ### Patch Changes
