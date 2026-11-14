@@ -56,7 +56,7 @@
     "version-packages": "ankhorage-changeset version"
   },
   "dependencies": {
-    "@ankhorage/contracts": "^26.11.0"
+    "@ankhorage/contracts": "^26.11.1"
   },
   "devDependencies": {
     "@ankhorage/devtools": "^2.7.0",
