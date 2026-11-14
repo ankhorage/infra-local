@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "kind": "adapter",
+  "title": "Ankhorage Local Infrastructure",
+  "summary": "Provides a safe local-host compute adapter that reports the current Node host without mutating its lifecycle.",
+  "purpose": "Expose the current machine through the provider-neutral compute boundary for local development and deterministic host inspection.",
+  "domain": "local compute infrastructure",
+  "responsibilities": [
+    "Inspect the current Node host through the compute adapter boundary.",
+    "Return provider-neutral compute observations for the local machine.",
+    "Allow an injected probe for deterministic tests or another trusted host environment."
+  ],
+  "boundaries": [
+    "Does not provision, suspend, resume, or delete the user's machine.",
+    "Does not define provider-neutral infrastructure contracts.",
+    "Does not manage containers, clusters, or remote cloud resources."
+  ],
+  "audience": [
+    "Infrastructure hosts selecting the current machine as a compute target.",
+    "Tests and tools that need deterministic local-host compute observations."
+  ],
+  "useCases": [
+    "Inspect the current host through the common compute adapter.",
+    "Inject a deterministic host probe for tests.",
+    "Compose local compute evidence without granting lifecycle mutation."
+  ],
+  "architecture": {
+    "role": "A non-destructive compute adapter for the current host.",
+    "invariants": [
+      "The default adapter never performs lifecycle mutations on the user's machine.",
+      "Host inspection is replaceable through an explicit probe boundary.",
+      "Results use the provider-neutral compute contract."
+    ]
+  },
+  "implements": [
+    {
+      "packageName": "@ankhorage/contracts",
+      "subpath": "./infra",
+      "interfaceId": "InfraComputeAdapter"
+    }
+  ],
+  "constraints": {
+    "platforms": ["Node.js host environments"],
+    "security": [
+      "The default adapter performs observation only and does not mutate host lifecycle."
+    ],
+    "limitations": [
+      "Provision, suspend, resume, and delete operations are intentionally unsupported."
+    ]
+  }
+}
