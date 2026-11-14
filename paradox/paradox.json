@@ -2,8 +2,10 @@
   "packageName": "@ankhorage/infra-local",
   "packageId": "@ankhorage/infra-local",
   "description": "Local-host compute adapter for provider-neutral Ankhorage infrastructure.",
-  "collaborators": null,
-  "donation": null,
+  "collaborators": true,
+  "donation": {
+    "account": "ankhorage"
+  },
   "badges": [
     {
       "id": "license",
@@ -14,7 +16,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.3.31",
+      "value": "v0.3.32",
       "color": "cb3837"
     },
     {
