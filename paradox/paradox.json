@@ -14,7 +14,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.3.30",
+      "value": "v0.3.31",
       "color": "cb3837"
     },
     {
@@ -62,7 +62,7 @@
   ],
   "usage": {
     "packageName": "@ankhorage/infra-local",
-    "command": "ankh infra-local --help"
+    "command": null
   },
   "usageEntries": [],
   "exampleCount": 1,
