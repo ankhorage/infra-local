@@ -1,5 +1,11 @@
 # @ankhorage/local
 
+## 0.3.33
+
+### Patch Changes
+
+- d2d5faf: Update dependencies: `@ankhorage/contracts`.
+
 ## 0.3.32
 
 ### Patch Changes

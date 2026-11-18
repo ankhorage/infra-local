@@ -1,7 +1,8 @@
 {
-  "packageName": "@ankhorage/infra-local",
+  "packageName": "Ankhorage Local Infrastructure",
   "packageId": "@ankhorage/infra-local",
-  "description": "Local-host compute adapter for provider-neutral Ankhorage infrastructure.",
+  "description": "Provides a safe local-host compute adapter that reports the current Node host without mutating its lifecycle.",
+  "purpose": "Expose the current machine through the provider-neutral compute boundary for local development and deterministic host inspection.",
   "collaborators": true,
   "donation": {
     "account": "ankhorage"
@@ -16,7 +17,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.3.32",
+      "value": "v0.3.33",
       "color": "cb3837"
     },
     {
