@@ -6,7 +6,38 @@
 
 Package: `@ankhorage/infra-local`
 
-Local-host compute adapter for provider-neutral Ankhorage infrastructure.
+Title: Ankhorage Local Infrastructure
+
+Provides a safe local-host compute adapter that reports the current Node host without mutating its lifecycle.
+
+Purpose: Expose the current machine through the provider-neutral compute boundary for local development and deterministic host inspection.
+
+Audience:
+
+- Infrastructure hosts selecting the current machine as a compute target.
+- Tests and tools that need deterministic local-host compute observations.
+
+## Scope and boundaries
+
+Responsibilities:
+
+- Inspect the current Node host through the compute adapter boundary.
+- Return provider-neutral compute observations for the local machine.
+- Allow an injected probe for deterministic tests or another trusted host environment.
+
+Boundaries:
+
+- Does not provision, suspend, resume, or delete the user's machine.
+- Does not define provider-neutral infrastructure contracts.
+- Does not manage containers, clusters, or remote cloud resources.
+
+Architecture role: A non-destructive compute adapter for the current host.
+
+Architectural invariants:
+
+- The default adapter never performs lifecycle mutations on the user's machine.
+- Host inspection is replaceable through an explicit probe boundary.
+- Results use the provider-neutral compute contract.
 
 ## Current architecture only
 
@@ -64,6 +95,26 @@ Paradox `/*** ... */` comments in `src` and leading `@usage` comments in real
 `examples/<example>/...` source files, plus any repository-owned manual documentation outside the
 generated output. The managed release workflow runs `bun run docs` after the package version bump
 and commits the regenerated artifacts in the release commit.
+
+## GitHub task lifecycle and workspace cleanup
+
+- **Start.** Treat each issue implementation, PR implementation, review, and change request (CR)
+  as an independent task. Fetch the current remote default branch and read the applicable issue,
+  PR, HEAD, review feedback, and CI state. Use a fresh, uniquely named task checkout or worktree.
+  Concurrent tasks must have distinct writable checkout, temporary, build, and cache paths.
+- **CRs.** Fetch and check out the current remote PR branch in the new workspace. Preserve PR
+  history and scope. Push corrections to the existing PR branch.
+- **Delivery.** Run applicable checks. Commit and push all intended changes, then verify that
+  GitHub has the intended commit on the correct remote branch. Report the exact HEAD, checks, CI,
+  findings, and blockers. Report acceptance that was not run as unverified. Read-only reviews hand
+  off their findings without creating a commit. Merge requires explicit authorization.
+- **Cleanup.** After handoff, resolve every candidate path and remove only task-owned directories
+  whose resolved paths are strictly under the resolved system path for `/tmp` (`/private/tmp` on
+  macOS). Refuse candidates that resolve outside that boundary, including through a symlink. Use
+  Git-aware removal for worktrees. Preserve workspaces outside the boundary, shared directories,
+  other tasks' directories, uncommitted changes, and unpushed commits. If blocked, persist
+  recoverable work first and document what must be retained. Report whether cleanup succeeded, was
+  skipped, or was blocked.
 
 ## Pull requests
 
