@@ -3,6 +3,7 @@
   "packageId": "@ankhorage/infra-local",
   "description": "Provides a safe local-host compute adapter that reports the current Node host without mutating its lifecycle.",
   "purpose": "Expose the current machine through the provider-neutral compute boundary for local development and deterministic host inspection.",
+  "productDocumentation": null,
   "collaborators": true,
   "donation": {
     "account": "ankhorage"
@@ -17,7 +18,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.3.33",
+      "value": "v0.3.34",
       "color": "cb3837"
     },
     {
@@ -53,8 +54,8 @@
     {
       "id": "tests",
       "label": "tests",
-      "value": "checked",
-      "color": "0a7f3f"
+      "value": "configured",
+      "color": "6f42c1"
     },
     {
       "id": "docs",
